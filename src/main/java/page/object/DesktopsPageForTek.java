@@ -98,7 +98,7 @@ public class DesktopsPageForTek extends BaseForTek {
 	public void clickOnCartOnHpLp3065() {
 		addToCartOnHpLp3065.click();
 	}
-	public void clickOnSelectQuantity( ) {
+	public void clickOnSelectQuantityForHpDesktop( ) {
 		selectQuantity.click();
 		
 	}
@@ -120,7 +120,7 @@ public class DesktopsPageForTek extends BaseForTek {
 		select.selectByVisibleText("Red");
 	}
 	public void selectQuantity () {
-		selectQuantityForCamera.sendKeys("1");
+		selectQuantityForCamera.click();
 	}
 	public void clickOnAddToCartCamera() {
 		clickOnAddToCartCamera.click();

@@ -50,12 +50,12 @@ public void user_click_add_to_cart_option_on_hp_lp3065_item() {
 }
 
 @And("User select quantity {int}")
-public void user_select_quantity(Integer int1) {
-	desktops.clickOnSelectQuantity();
+public void user_select_quantity() {
+	desktops.clickOnSelectQuantityForHpDesktop();
 	logger.info("User select quantity");
 }
 
-@And("User click add to Cart button")
+@And("User click on add to Cart button")
 public void user_click_add_to_cart_button() {
 	desktops.clickOnAddToCartButton();
 	logger.info("user clicked on add to cart button");
