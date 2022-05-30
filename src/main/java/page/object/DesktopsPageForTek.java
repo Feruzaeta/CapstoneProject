@@ -30,11 +30,12 @@ public class DesktopsPageForTek extends BaseForTek {
 	@FindBy (tagName = "img")
 	private List<WebElement> items;
 	
-	@FindBy (xpath = "//i [@class='fa fa-shopping-cart']")
+	@FindBy (xpath = "(//button[@type='button']) [15]")
+	
 	private WebElement addToCartOnHpLp3065; 
 	
 	@FindBy (xpath = "//input[@id = 'input-quantity']")
-	private WebElement selectQuantity;
+	private WebElement selectQuantityHp3065;
 	
 	@FindBy(xpath= "//button [@id='button-cart']")
 	private WebElement addToCartLp3065;
@@ -42,7 +43,7 @@ public class DesktopsPageForTek extends BaseForTek {
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement successMessage;
 	
-	@FindBy(xpath = "//*[@id=\"content\"]/div[4]/div[2]/div/div[2]/div[2]/button[1]")
+	@FindBy(xpath = "(//button[@type='button']) [12]")
 	private WebElement addToCartEos5d;
 	
 	@FindBy (xpath = "//select[@id='input-option226']")
@@ -98,8 +99,9 @@ public class DesktopsPageForTek extends BaseForTek {
 	public void clickOnCartOnHpLp3065() {
 		addToCartOnHpLp3065.click();
 	}
-	public void clickOnSelectQuantityForHpDesktop( ) {
-		selectQuantity.click();
+	public void SelectQuantityForHpDesktop() {
+		selectQuantityHp3065.clear();
+		selectQuantityHp3065.sendKeys("1");
 		
 	}
 	public void clickOnAddToCartButton() {
@@ -143,8 +145,12 @@ public class DesktopsPageForTek extends BaseForTek {
 	public void yourReview (String reviewValue) {
 		 yourReviewField.sendKeys(reviewValue);
 	}
-	public void rating(String ratingValue) {
-		ratingOption5.isSelected();
+	public boolean rating(String ratingValue) {
+		ratingOption5.click();
+		if(ratingOption5.isSelected())
+		return true;
+		else 
+			return false;
 	}
 	
 	public void clickOnContinue() {

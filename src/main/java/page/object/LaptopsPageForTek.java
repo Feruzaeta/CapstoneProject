@@ -37,7 +37,7 @@ public class LaptopsPageForTek extends BaseForTek{
 	@FindBy (xpath = "//button[@class='btn btn-danger btn-xs']")
 	private WebElement clickOnRedXButton;//done
 	
-	@FindBy (id = "cart-total")
+	@FindBy (xpath="//span[@id='cart-total']")
 	private WebElement cartTotal0Displayed;// isdisplayed done
 	
 	@FindBy (xpath = "//*[@id=\"content\"]/div[4]/div[1]/div/div[2]/div[2]/button[3]")

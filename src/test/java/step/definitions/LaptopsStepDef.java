@@ -12,6 +12,7 @@ import page.object.LaptopsPageForTek;
 public class LaptopsStepDef extends BaseForTek{
 	
 	LaptopsPageForTek laptops = new LaptopsPageForTek();
+	
 	@Given("User is on Retail website")
 	public void user_is_on_retail_website() {
 		Assert.assertTrue(laptops.logoDisplayed());
@@ -48,7 +49,7 @@ public class LaptopsStepDef extends BaseForTek{
 	}
 
 	@Then("User should see ‘{int} tem\\(s){double}’ showed to the cart")
-	public void user_should_see_tem_s_showed_to_the_cart() {
+	public void user_should_see_tem_s_showed_to_the_cart(int int1, double double1) {
 	   Assert.assertTrue(laptops.cartTotalIsDisplayed());
 	}
 
@@ -64,10 +65,10 @@ public class LaptopsStepDef extends BaseForTek{
 	    logger.info("user click on red X button to remove the item from cart");
 	}
 
-	@Then("item should be removed and cart should show '0'")
-	public void item_should_be_removed_and_cart_should_show_item_s() {
-	    Assert.assertTrue(laptops.cartTotal0isDisplayed());
-	    logger.info("item should be removed and cart should show '0'");
+	@Then("item should be removed and cart should show {string} item\\(s)’")
+	public void item_should_be_removed_and_cart_should_show_item_s(String string) {    
+	  Assert.assertTrue(laptops.cartTotal0isDisplayed());
+	   logger.info("item should be removed and cart should show '0'");
 	}
 
 	@When("User click on product comparison icon on ‘MacBook’")
@@ -117,9 +118,11 @@ public class LaptopsStepDef extends BaseForTek{
 	   laptops.clickOnMacBokPro();
 	}
 
-	@Then("User should see  ‘${double}’ price tag is present on UI.")
-	public void user_should_see_$_price_tag_is_present_on_ui(Double double1) {
-	    Assert.assertTrue(laptops.MacBookprice2000());
+	@Then("User should see  ‘{double}’ price tag is present on UI.")
+	public void user_should_see_price_tag_is_present_on_ui(Double double1) {
+		 Assert.assertTrue(laptops.MacBookprice2000());
+			}
 	}
+	   
 
-}
+

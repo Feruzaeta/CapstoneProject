@@ -1,4 +1,4 @@
-@TestLaptops
+@CompleteTest
 Feature: Laptop & NoteBooks Feature
 Background: 
 Given User is on Retail website
@@ -12,7 +12,7 @@ Then User should see a message ‘Success: You have added MacBook to your shoppi
 And User should see ‘1 tem(s)-602.00’ showed to the cart 
 And User click on cart option 
 And user click on red X button to remove the item from cart
-Then item should be removed and cart should show ‘0 item(s)’
+Then item should be removed and cart should show "0" item(s)’
 
 Scenario: Product Comparison  
 And User click on product comparison icon on ‘MacBook’
@@ -29,6 +29,6 @@ Then User should get a message ‘You must login or create an account to save So
 
 Scenario: Validate the price of MacBook Pro is 2000   
 And User click on ‘MacBook Pro’ item 
-Then User should see  ‘$2,000.00’ price tag is present on UI.
+Then User should see  ‘2,000.00’ price tag is present on UI.
 
 

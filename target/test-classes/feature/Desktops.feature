@@ -1,4 +1,4 @@
-@TestAllDesktops
+@CompleteTest
 Feature: Desktops
 
  Background:
@@ -35,3 +35,4 @@ Feature: Desktops
 		And User click on Continue Button 
 		Then User should see a message with ‘Thank you for your review. It has been submitted to the webmaster for approval.”
 
+	
