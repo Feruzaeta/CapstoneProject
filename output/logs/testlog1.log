@@ -2368,3 +2368,22 @@
 2022-05-30 15:14:49,220 [main] INFO .\src\test\resources\input\log4j.properties - User click on Laptop &NoteBook tab
 2022-05-30 15:14:49,592 [main] INFO .\src\test\resources\input\log4j.properties - User click on show all Laptop &NoteBook
 2022-05-30 15:14:54,935 [main] INFO .\src\test\resources\input\log4j.properties - Scenario Validate the price of MacBook Pro is 2000 PASSED
+2022-05-31 19:41:44,071 [main] INFO .\src\test\resources\input\log4j.properties - Scenario Register as an Affiliate user with Cheque Payment Method started
+2022-05-31 19:41:49,710 [main] INFO .\src\test\resources\input\log4j.properties - user is on Home Page
+2022-05-31 19:41:49,778 [main] INFO .\src\test\resources\input\log4j.properties - User click  on MyAccount
+2022-05-31 19:41:50,012 [main] INFO .\src\test\resources\input\log4j.properties - User click on Login
+2022-05-31 19:41:50,092 [main] INFO .\src\test\resources\input\log4j.properties - user enter the userName feryme1@gmail.com
+2022-05-31 19:41:50,162 [main] INFO .\src\test\resources\input\log4j.properties - user enter the password  feruza6624
+2022-05-31 19:42:20,597 [main] INFO .\src\test\resources\input\log4j.properties - Scenario Register as an Affiliate user with Cheque Payment Method FAILED
+2022-05-31 19:42:20,617 [main] INFO .\src\test\resources\input\log4j.properties - Scenario Edit your affiliate information from Cheque payment method to Bank Transfer started
+2022-05-31 19:42:22,746 [main] INFO .\src\test\resources\input\log4j.properties - user is on Home Page
+2022-05-31 19:42:22,801 [main] INFO .\src\test\resources\input\log4j.properties - User click  on MyAccount
+2022-05-31 19:42:23,022 [main] INFO .\src\test\resources\input\log4j.properties - User click on Login
+2022-05-31 19:42:23,084 [main] INFO .\src\test\resources\input\log4j.properties - user enter the userName feryme1@gmail.com
+2022-05-31 19:42:23,145 [main] INFO .\src\test\resources\input\log4j.properties - user enter the password  feruza6624
+2022-05-31 19:42:41,546 [main] INFO .\src\test\resources\input\log4j.properties - Scenario Edit your account Information started
+2022-05-31 19:42:43,736 [main] INFO .\src\test\resources\input\log4j.properties - user is on Home Page
+2022-05-31 19:42:43,799 [main] INFO .\src\test\resources\input\log4j.properties - User click  on MyAccount
+2022-05-31 19:42:44,047 [main] INFO .\src\test\resources\input\log4j.properties - User click on Login
+2022-05-31 19:42:44,128 [main] INFO .\src\test\resources\input\log4j.properties - user enter the userName feryme1@gmail.com
+2022-05-31 19:42:44,215 [main] INFO .\src\test\resources\input\log4j.properties - user enter the password  feruza6624
