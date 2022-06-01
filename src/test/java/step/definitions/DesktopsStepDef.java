@@ -49,20 +49,20 @@ public void user_click_add_to_cart_option_on_hp_lp3065_item() {
 	logger.info("user clicked on cart HP LP 3065");
 }
 
-@And("User select quantity {int}")
-public void user_select_quantity(Integer int1) {
-	desktops.clickOnSelectQuantity();
+@And("User select quantity {int} for HP desktop")
+public void user_select_quantity_for_HP_desktop(int quantity) {
+	desktops.SelectQuantityForHpDesktop();
 	logger.info("User select quantity");
 }
 
-@And("User click add to Cart button")
+@And("User click on add to Cart button")
 public void user_click_add_to_cart_button() {
 	desktops.clickOnAddToCartButton();
 	logger.info("user clicked on add to cart button");
 }
 
 @Then("User should see a message ‘Success: you have added HP LP {int} to your Shopping cart!’")
-public void user_should_see_a_message_success_you_have_added_hp_lp_to_your_shopping_cart(Integer int1) {
+public void user_should_see_a_message_success_you_have_added_hp_lp_to_your_shopping_cart(int hp) {
 	Assert.assertTrue(desktops.isSuccessMessageDisplayed());
 	logger.info("Scuccess you have added Hp LP 3065");
 }
@@ -78,8 +78,8 @@ public void user_select_color_from_dropdown_red() {
 	desktops.selectColor();
 	logger.info("User select color from dropdown 'Red'");
 }
-@And("User select quantity 1")
-public void user_select_quantity_1() {
+@And("User select quantity {int} for camera")
+public void user_select_quantity_1_for_camera(int camera) {
 	desktops.selectQuantity();
 	logger.info("User select quantity 1");
 }
